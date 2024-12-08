@@ -1,0 +1,66 @@
+/* Default (Desktop) Styles */
+.custom-carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 50%; /* Limit width to 50% for desktop */
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  .custom-text-container {
+    max-width: 100%;
+  }
+  
+  .custom-carousel-header .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .custom-carousel-caption h1 {
+    font-size: 40px;
+  }
+  
+  .custom-carousel-caption p {
+    font-size: 1.25rem;
+  }
+  
+  .custom-carousel-caption .btn {
+    font-size: 1.1rem;
+  }
+  
+  /* Mobile Styles (max-width: 767px) - Hide Text */
+  @media (max-width: 767px) {
+    .custom-carousel-caption {
+      display: none; /* Hide text content on mobile */
+    }
+  }
+  
+  /* Tablet Styles (min-width: 768px and max-width: 1024px) - Hide Text */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .custom-carousel-caption {
+      display: none; /* Hide text content on tablet */
+    }
+  }
+  
+  /* Large Devices Styles (min-width: 1200px) */
+  @media (min-width: 1200px) {
+    .custom-carousel-caption {
+      display: block; /* Ensure text is visible on large screens */
+    }
+  
+    .custom-carousel-caption h1 {
+      font-size: 45px;
+    }
+  
+    .custom-carousel-caption p {
+      font-size: 1.3rem;
+    }
+  
+    .custom-carousel-caption .btn {
+      font-size: 1.2rem;
+      padding: 18px 35px;
+    }
+  }
+  

@@ -1,0 +1,123 @@
+/* Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Ensure modal is on top of other elements */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    cursor: pointer; /* Change cursor to pointer when hovering over the image */
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #f1f1f1;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer; /* Change cursor to pointer for the close button */
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* Cursor Button */
+.cursor-button {
+    position: absolute;
+    bottom: 20px; /* Adjust position as needed */
+    left: 30px;   /* Adjust position as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer; /* Change cursor to pointer for the button */
+    border-radius: 5px;
+}
+
+.cursor-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens less than 600px wide */
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 90%;
+    }
+
+    .close {
+        top: 5px;
+        right: 10px;
+        font-size: 30px;
+    }
+
+    .cursor-button {
+        bottom: 10px;
+        left: 10px;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #caption {
+        font-size: 12px;
+        padding: 5px 0;
+        height: auto;
+    }
+}
+
+/* For screens between 601px and 1024px wide (tablets and small desktops) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .modal-content {
+        width: 85%; /* Slightly adjusted width for tablets */
+        max-width: 85%;
+    }
+
+    .close {
+        top: 10px;
+        right: 20px;
+        font-size: 32px;
+    }
+
+    .cursor-button {
+        bottom: 15px;
+        left: 15px;
+        font-size: 15px;
+        padding: 9px 18px;
+    }
+
+    #caption {
+        font-size: 14px;
+        padding: 8px 0;
+        height: auto;
+    }
+}
+

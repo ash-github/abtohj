@@ -1,0 +1,80 @@
+/* Base styles */
+.carousel-header {
+    /* Default styles for large screens */
+  }
+  
+  .carousel-caption {
+    /* Default caption styles */
+  }
+  
+  /* For screens smaller than 1200px (Large tablets or small desktop) */
+  @media (max-width: 1199px) {
+    .carousel-caption .display-1 {
+      font-size: 3rem;  /* Example of resizing text for smaller screens */
+    }
+    .carousel-caption .fs-5 {
+      font-size: 1rem;
+    }
+    .carousel-caption {
+      padding: 2rem;
+    }
+  }
+  
+  /* For screens smaller than 992px (Tablets and below) */
+  @media (max-width: 991px) {
+    .carousel-caption .display-1 {
+      font-size: 2.5rem;
+    }
+    .carousel-caption .fs-5 {
+      font-size: 0.9rem;
+    }
+    .carousel-caption {
+      text-align: center;
+      padding: 1.5rem;
+    }
+  
+    /* Adjust button styles */
+    .carousel-caption .btn {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+    }
+  }
+  
+  /* For screens smaller than 768px (Mobile phones) */
+  @media (max-width: 767px) {
+    .carousel-caption .display-1 {
+      font-size: 2rem;
+    }
+    .carousel-caption .fs-5 {
+      font-size: 0.8rem;
+    }
+    .carousel-caption {
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    /* Adjust button for mobile */
+    .carousel-caption .btn {
+      padding: 0.8rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* For screens smaller than 576px (Very small devices, e.g., small phones) */
+  @media (max-width: 575px) {
+    .carousel-caption .display-1 {
+      font-size: 1.5rem;
+    }
+    .carousel-caption .fs-5 { 
+      font-size: 0.75rem;
+    }
+    .carousel-caption {
+      padding: 0.5rem;
+    }
+  
+    .carousel-caption .btn {
+      padding: 0.7rem 1.2rem;
+      font-size: 0.8rem;
+    }
+  }
+  

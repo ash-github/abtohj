@@ -1,0 +1,106 @@
+ b{
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5; /* Light gray background for contrast */
+            text-align: center;
+        }
+
+        .heading1 {
+            font-size: 40px; /* Large font size for the heading */
+            font-weight: bold; /* Bold text */
+            color: #333; /* Dark text color */
+            margin-bottom: 40px; /* Space below the heading */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            background: linear-gradient(90deg, #007bff, #00bcd4); /* Gradient background */
+            -webkit-background-clip: text; /* Clipping the gradient to text */
+            color: transparent; /* Text color set to transparent */
+            display: inline; /* Inline display to fit gradient background */
+            padding: 10px; /* Padding around the text */
+            border-radius: 10px; /* Rounded corners for the heading */
+            text-center:1000px ;
+        }
+
+        .container4 {
+            display: flex;
+            gap: 30px; /* Space between the divs */
+            flex-wrap: wrap; /* Allows wrapping for smaller screens */
+            justify-content: center; /* Center align the divs horizontally */
+        }
+
+        .box4 {
+            background: linear-gradient(135deg, #ffffff, #e0e0e0); /* Gradient background */
+            border: 2px solid #dcdcdc; /* Light border */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+            padding: 40px; /* Increased padding */
+            width: 400px; /* Increased width of the div */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+
+        .box4:hover {
+            transform: translateY(-10px); /* Lift effect on hover */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+        }
+
+        .icon1-group {
+            display: flex;
+            flex-direction: column;
+            gap: 30px; /* Space between icon-text pairs */
+        }
+
+        .icon1-text-wrapper {
+            display: flex;
+            align-items: center; /* Aligns text and icon vertically */
+            gap: 15px; /* Space between text and icon */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        .icon1-text-wrapper:hover .icon,
+        .icon1-text-wrapper:hover .icon-text {
+            color: #007bff; /* Change color on hover */
+        }
+
+        .icon1 {
+            width: 60px; /* Size of the icons */
+            height: 60px; /* Size of the icons */
+            fill: blue; /* Initial color of the icons */
+            transition: transform 0.3s; /* Smooth transform transition */
+        }
+
+        .icon1-text {
+            margin: 0;
+            font-size: 32px; /* Font size */
+            font-weight: bold; /* Bold text */
+            color: black; /* Color of the text */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Text shadow for subtle depth */
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        @media (max-width: 600px) {
+            .icon1-group {
+                flex-direction: column; /* Stack icons and text vertically on smaller screens */
+            }
+
+            .icon1-text-wrapper {
+                flex-direction: column; /* Stack icon above text */
+                align-items: center; /* Center text under icon */
+            }
+
+            .icon1 {
+                width: 50px; /* Smaller icon size for smaller screens */
+                height: 50px; /* Smaller icon size for smaller screens */
+            }
+
+            .icon1-text {
+                font-size: 16px; /* Slightly smaller font size for smaller screens */
+            }
+        }

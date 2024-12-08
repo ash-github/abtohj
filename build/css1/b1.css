@@ -1,0 +1,85 @@
+.social-share1 {
+  position: fixed;
+  right: 10px;
+  top: 72%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.social-share1 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-share1 a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-share1 a svg {
+  width: 20px;
+  height: 20px;
+  fill: #555;
+  vertical-align: middle;
+}
+
+.social-share1 a.facebook svg {
+  fill: #3b5998;
+}
+
+.social-share1 a.whatsapp svg {
+  fill: #25d366;
+}
+
+.social-share1 a.pinterest svg {
+  fill: #bd081c;
+}
+
+.social-share1 a.linkedin svg {
+  fill: #0077b5;
+}
+
+.social-share1 a.instagram svg {
+fill: #f09433; 
+
+}
+
+.social-share1 a.youtube svg {
+fill: #f00; 
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .social-share1 {
+    /*display: none;*/
+  }
+}
+
+/* Responsive Coding Created By: Shift Media Solutions| SMS️ */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+  
